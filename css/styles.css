@@ -7,6 +7,8 @@
 /* ============================================= */
 /*              Variables                        */
 /* ============================================= */
+/* Color Variables */
+/* Media Query Breakpoints */
 /* ============================================= */
 /*              Mixins                           */
 /* ============================================= */
@@ -574,14 +576,24 @@ a {
   padding: 0 10px;
 }
 
-/* line 9, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 5, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 16, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
 }
 
-/* line 15, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 22, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -590,67 +602,67 @@ a {
   border-radius: 5px;
 }
 
-/* line 23, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 30, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-1 {
   background-color: #927bc1;
 }
 
-/* line 27, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 34, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-2 {
   background-color: #fd7856;
 }
 
-/* line 31, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 38, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-3 {
   background-color: #deb2ee;
 }
 
-/* line 35, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 42, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-4 {
   background-color: #7ee6fd;
 }
 
-/* line 39, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 46, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-5 {
   background-color: #88d9a0;
 }
 
-/* line 43, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 50, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-6 {
   background-color: #4da2bb;
 }
 
-/* line 47, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 54, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-7 {
   background-color: #ec9fa3;
 }
 
-/* line 51, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 58, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-8 {
   background-color: #fd9f85;
 }
 
-/* line 55, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 62, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-9 {
   background-color: #e4757a;
 }
 
-/* line 59, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 66, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-10 {
   background-color: #63cc82;
 }
 
-/* line 63, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 70, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-11 {
   background-color: #51ddfc;
 }
 
-/* line 67, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 74, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-12 {
   background-color: #80e8d1;
 }
 
-/* line 71, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 78, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .card {
   flex-basis: 100%;
 }
@@ -660,100 +672,93 @@ a {
 /* ============================================= */
 @media (min-width: 768px) {
   /* line 6, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 13, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 19, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 12, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .row {
     flex-direction: row;
   }
-  /* line 23, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 16, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center;
   }
-  /* line 30, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 23, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-  /* line 34, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 27, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-1 {
     flex-basis: 8.33%;
   }
-  /* line 38, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 31, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-2 {
     flex-basis: 16.67%;
   }
-  /* line 42, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 35, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-3 {
     flex-basis: 25.00%;
   }
-  /* line 46, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 39, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-4 {
     flex-basis: 33.33%;
   }
-  /* line 50, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 43, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-5 {
     flex-basis: 41.67%;
   }
-  /* line 54, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 47, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-6 {
     flex-basis: 50.00%;
   }
-  /* line 58, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 51, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-7 {
     flex-basis: 58.33%;
   }
-  /* line 62, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 55, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-8 {
     flex-basis: 66.67%;
   }
-  /* line 66, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 59, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-9 {
     flex-basis: 75.00%;
   }
-  /* line 70, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 63, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-10 {
     flex-basis: 83.33%;
   }
-  /* line 74, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 67, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-11 {
     flex-basis: 91.67%;
   }
-  /* line 78, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 71, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .col-12 {
     flex-basis: 100%;
   }
-  /* line 82, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 75, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
-  /* line 88, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 81, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .nav-link {
     flex-basis: 100px;
   }
-  /* line 92, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 85, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .btn {
     padding: 10px 30px;
   }
-  /* line 96, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 89, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .btn + .btn {
     margin-left: 10px;
   }
-  /* line 100, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 93, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
   .logo {
     margin-left: initial;
     margin-right: initial;
