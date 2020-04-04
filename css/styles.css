@@ -12,6 +12,7 @@
 /* ============================================= */
 /*              Mixins                           */
 /* ============================================= */
+/* Media Queries */
 /* ============================================= */
 /* Base Imports */
 /* ============================================= */
@@ -457,27 +458,38 @@ a {
   border-radius: 5px;
 }
 
-/* line 15, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
+@media (min-width: 768px) {
+  /* line 5, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
+  .btn {
+    padding: 10px 30px;
+  }
+  /* line 16, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
+
+/* line 22, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
 .default {
   background-color: #51ddfc;
 }
 
-/* line 19, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
+/* line 26, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
 .error {
   background-color: #e4757a;
 }
 
-/* line 23, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
+/* line 30, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
 .info {
   background-color: #927bc1;
 }
 
-/* line 27, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
+/* line 34, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
 .success {
   background-color: #63cc82;
 }
 
-/* line 31, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
+/* line 38, ../Code/Techdegree-Project-4/scss/components/_buttons.scss */
 .warning {
   background-color: #fd7856;
 }
@@ -521,8 +533,17 @@ a {
   flex-direction: column;
 }
 
-/* line 12, ../Code/Techdegree-Project-4/scss/components/_navigation.scss */
-.nav-link {
+@media (min-width: 768px) {
+  /* line 5, ../Code/Techdegree-Project-4/scss/components/_navigation.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* line 15, ../Code/Techdegree-Project-4/scss/components/_navigation.scss */
+.nav .nav-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
@@ -531,10 +552,17 @@ a {
   transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
-/* line 23, ../Code/Techdegree-Project-4/scss/components/_navigation.scss */
-.nav-link:hover {
+/* line 24, ../Code/Techdegree-Project-4/scss/components/_navigation.scss */
+.nav .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
+}
+
+@media (min-width: 768px) {
+  /* line 15, ../Code/Techdegree-Project-4/scss/components/_navigation.scss */
+  .nav .nav-link {
+    flex-basis: 100px;
+  }
 }
 
 /* ============================================= */
@@ -593,7 +621,14 @@ a {
   padding: 1em 10px;
 }
 
-/* line 22, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 16, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* line 25, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -602,167 +637,136 @@ a {
   border-radius: 5px;
 }
 
-/* line 30, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-1 {
-  background-color: #927bc1;
-}
-
-/* line 34, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-2 {
-  background-color: #fd7856;
-}
-
-/* line 38, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-3 {
-  background-color: #deb2ee;
-}
-
-/* line 42, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-4 {
-  background-color: #7ee6fd;
-}
-
-/* line 46, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-5 {
-  background-color: #88d9a0;
-}
-
-/* line 50, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-6 {
-  background-color: #4da2bb;
-}
-
-/* line 54, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-7 {
-  background-color: #ec9fa3;
-}
-
-/* line 58, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-8 {
-  background-color: #fd9f85;
-}
-
-/* line 62, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-9 {
-  background-color: #e4757a;
-}
-
-/* line 66, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-10 {
-  background-color: #63cc82;
-}
-
-/* line 70, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-11 {
-  background-color: #51ddfc;
-}
-
-/* line 74, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.theme.col-12 {
-  background-color: #80e8d1;
-}
-
-/* line 78, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
-.card {
-  flex-basis: 100%;
-}
-
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
 @media (min-width: 768px) {
-  /* line 6, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 12, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .row {
-    flex-direction: row;
-  }
-  /* line 16, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 25, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center;
   }
-  /* line 23, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
+  /* line 38, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-  /* line 27, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-1 {
+  /* line 41, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 45, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-1 {
     flex-basis: 8.33%;
   }
-  /* line 31, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-2 {
+  /* line 48, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-2 {
     flex-basis: 16.67%;
   }
-  /* line 35, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-3 {
+  /* line 51, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-3 {
     flex-basis: 25.00%;
   }
-  /* line 39, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-4 {
+  /* line 54, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-4 {
     flex-basis: 33.33%;
   }
-  /* line 43, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-5 {
+  /* line 57, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-5 {
     flex-basis: 41.67%;
   }
-  /* line 47, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-6 {
+  /* line 60, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-6 {
     flex-basis: 50.00%;
   }
-  /* line 51, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-7 {
+  /* line 63, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-7 {
     flex-basis: 58.33%;
   }
-  /* line 55, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-8 {
+  /* line 66, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-8 {
     flex-basis: 66.67%;
   }
-  /* line 59, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-9 {
+  /* line 69, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-9 {
     flex-basis: 75.00%;
   }
-  /* line 63, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-10 {
+  /* line 72, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-10 {
     flex-basis: 83.33%;
   }
-  /* line 67, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-11 {
+  /* line 75, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-11 {
     flex-basis: 91.67%;
   }
-  /* line 71, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .col-12 {
+  /* line 78, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+  [class^=col].col-12 {
     flex-basis: 100%;
   }
-  /* line 75, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* line 81, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .nav-link {
-    flex-basis: 100px;
-  }
-  /* line 85, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .btn {
-    padding: 10px 30px;
-  }
-  /* line 89, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  /* line 93, ../Code/Techdegree-Project-4/scss/components/_media-queries.scss */
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
+}
+
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-1 {
+  background-color: #927bc1;
+}
+
+/* line 89, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-2 {
+  background-color: #fd7856;
+}
+
+/* line 93, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-3 {
+  background-color: #deb2ee;
+}
+
+/* line 97, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-4 {
+  background-color: #7ee6fd;
+}
+
+/* line 101, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-5 {
+  background-color: #88d9a0;
+}
+
+/* line 105, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-6 {
+  background-color: #4da2bb;
+}
+
+/* line 109, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-7 {
+  background-color: #ec9fa3;
+}
+
+/* line 113, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-8 {
+  background-color: #fd9f85;
+}
+
+/* line 117, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-9 {
+  background-color: #e4757a;
+}
+
+/* line 121, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-10 {
+  background-color: #63cc82;
+}
+
+/* line 125, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-11 {
+  background-color: #51ddfc;
+}
+
+/* line 129, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.theme.col-12 {
+  background-color: #80e8d1;
+}
+
+/* line 133, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+.card {
+  flex-basis: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
