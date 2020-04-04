@@ -13,3 +13,8 @@
 		@error "No value could be retrieved for '#{$break}'."
 	}
 }
+
+/* Button Color Hover */
+@mixin buttonHover($btn-color) {
+	background-color: lighten($btn-color, 15%);
+}

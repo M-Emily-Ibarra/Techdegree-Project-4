@@ -10,6 +10,7 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+	transition: background-color .3s ease-in;
 
 		@include mq(medium) {
 			padding: 10px 30px;
@@ -21,20 +22,35 @@
 
 .default {
   background-color: $bright-aqua-blue;
+	&:hover {
+		@include buttonHover($bright-aqua-blue);
+	}
 }
 
 .error {
   background-color: $salmon-red;
+	&:hover {
+		@include buttonHover($salmon-red);
+	}
 }
 
 .info {
   background-color: $lilac-purple;
+	&:hover {
+		@include buttonHover($lilac-purple);
+	}
 }
 
 .success {
   background-color: $bright-green;
+	&:hover {
+		@include buttonHover($bright-green);
+	}
 }
 
 .warning {
   background-color: $coral-orange;
+	&:hover {
+		@include buttonHover($coral-orange);
+	}
 }
