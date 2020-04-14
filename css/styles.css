@@ -8,6 +8,7 @@
 /*              Variables                        */
 /* ============================================= */
 /* Color Variables */
+/* Grid Variables */
 /* Media Query Breakpoints */
 /* ============================================= */
 /*              Mixins                           */
@@ -736,62 +737,62 @@ a {
   background-color: #927bc1;
 }
 
-/* line 89, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-2 {
   background-color: #fd7856;
 }
 
-/* line 93, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-3 {
   background-color: #deb2ee;
 }
 
-/* line 97, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-4 {
   background-color: #7ee6fd;
 }
 
-/* line 101, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-5 {
   background-color: #88d9a0;
 }
 
-/* line 105, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-6 {
   background-color: #4da2bb;
 }
 
-/* line 109, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-7 {
   background-color: #ec9fa3;
 }
 
-/* line 113, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-8 {
   background-color: #fd9f85;
 }
 
-/* line 117, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-9 {
   background-color: #e4757a;
 }
 
-/* line 121, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-10 {
   background-color: #63cc82;
 }
 
-/* line 125, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-11 {
   background-color: #51ddfc;
 }
 
-/* line 129, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 85, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .theme.col-12 {
   background-color: #80e8d1;
 }
 
-/* line 133, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
+/* line 90, ../Code/Techdegree-Project-4/scss/components/_grid.scss */
 .card {
   flex-basis: 100%;
 }

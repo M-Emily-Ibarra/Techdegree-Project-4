@@ -6,17 +6,27 @@ $white: #fff;
 $primary-grey: #777;
 $bright-teal-blue: #58e1c1;
 $bright-aqua-blue: #51ddfc;
-$electric-blue: #7ee6fd;
-$turquoise-blue: #80e8d1;
-$boston-muted-blue: #4da2bb;
 $bright-green: #63cc82;
-$mint-green: #88d9a0;
-$cherry-blossom-pink: #ec9fa3;
-$dusty-rose-pink: #fd9f85;
 $salmon-red: #e4757a;
 $coral-orange: #fd7856;
 $lilac-purple: #927bc1;
-$wisteria-purple: #deb2ee;
+
+/* Grid Variables */
+// $flexBasis: 8.33;
+$gridThemes: (
+	'1': #927bc1,
+	'2': #fd7856,
+	'3': #deb2ee,
+	'4': #7ee6fd,
+	'5': #88d9a0,
+	'6': #4da2bb,
+	'7': #ec9fa3,
+	'8': #fd9f85,
+	'9': #e4757a,
+	'10': #63cc82,
+	'11': #51ddfc,
+	'12': #80e8d1,
+);
 
 /* Media Query Breakpoints */
 $break-m: 768px;

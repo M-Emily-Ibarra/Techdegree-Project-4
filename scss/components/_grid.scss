@@ -79,55 +79,12 @@
 			flex-basis: 100%;
 		}
 	}
-
 }
 
-.theme.col-1 {
-  background-color: $lilac-purple;
-}
-
-.theme.col-2 {
-  background-color: $coral-orange;
-}
-
-.theme.col-3 {
-  background-color: $wisteria-purple;
-}
-
-.theme.col-4 {
-  background-color: $electric-blue;
-}
-
-.theme.col-5 {
-  background-color: $mint-green;
-}
-
-.theme.col-6 {
-  background-color: $boston-muted-blue;
-}
-
-.theme.col-7 {
-  background-color: $cherry-blossom-pink;
-}
-
-.theme.col-8 {
-  background-color: $dusty-rose-pink;
-}
-
-.theme.col-9 {
-  background-color: $salmon-red;
-}
-
-.theme.col-10 {
-  background-color: $bright-green;
-}
-
-.theme.col-11 {
-  background-color: $bright-aqua-blue;
-}
-
-.theme.col-12 {
-  background-color: $turquoise-blue;
+@each $i, $color in $gridThemes {
+  .theme.col-#{$i} {
+    background-color: $color;
+  }
 }
 
 .card {
